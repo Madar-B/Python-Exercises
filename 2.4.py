@@ -1,0 +1,7 @@
+a = int(input("Syötä  ensimmäinen luku"))
+b = int(input("Syötä toinen luku"))
+c = int(input("Syötä kolmas luku"))
+summa = (a + b + c)
+tulo = (a * b * c)
+keskiarvo =( summa /3)
+print("Summa on", (summa),"Tulo on", (tulo), "Keskiarvo on",(keskiarvo))

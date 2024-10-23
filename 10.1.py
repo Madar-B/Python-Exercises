@@ -27,7 +27,7 @@ class Hissi:
         while self.nykyinen_kerros < kohde_kerros:
             self.kerros_ylös()
         while self.nykyinen_kerros > kohde_kerros:
-            self.kerros_alas(
+            self.kerros_alas()
 
 
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Osallistujat ja Äänestys</title>
+</head>
+<body>
+  <script>
+    const amount = parseInt(prompt("Syötä osallistujien määrä"));
+    const participants = {};
+
+    for (let x = 0; x < amount; x++) {
+      const nimi = prompt(`Syötä osallistujan ${x + 1} nimi`);
+      participants[`participant${x + 1}`] = {
+        name: nimi,
+        votes: 0
+      };
+    }
+
+    console.log(participants);
+
+    let voters = parseInt(prompt("Syötä äänestäjien määrä"));
+    for (let i = 0; i < voters; i++) {
+      const vote = prompt(`Ketä sinä äänestät? Anna nimi:`);
+      let voted = false;
+
+      for (let key in participants) {
+        if (participants[key].name === vote) {
+          participants[key].votes++;
+          voted = true;
+          break;
+        }
+      }
+
+      if (!voted) {
+        console.log(`Osallistujaa nimellä "${vote}" ei löytynyt.`);
+      }
+    }
+
+    console.log("Tulokset:", participants);
+  </script>
+</body>
+</html>

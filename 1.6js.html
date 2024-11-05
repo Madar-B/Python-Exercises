@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Square Root Calculator</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    const message = confirm("Haluatko laskea neliöjuuren?");
+    if (message) {
+      const nro = prompt("Anna numero");
+      const number = parseFloat(nro);
+
+      if (number > 0) {
+        const tulos = Math.sqrt(number);
+        document.getElementById("output").innerText = `Neliöjuuri: ${tulos}`;
+      } else {
+        document.getElementById("output").innerText = "Numero on oltava positiivinen.";
+      }
+    } else {
+      document.getElementById("output").innerText = "Ohjelma suljetaan.";
+    }
+  </script>
+</body>
+</html>

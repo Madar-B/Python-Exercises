@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Names</title>
+</head>
+<body>
+  <ul id="dogList"></ul>
+
+  <script>
+    const input = prompt("Syötä kuuden koiran nimet ja erota ne pilkulla");
+    let nimet = input.split(',').map(value => value.trim());
+    nimet.sort().reverse();
+
+    const list = document.getElementById("dogList");
+    for (let i = 0; i < nimet.length; i++) {
+      const listItem = document.createElement('li');
+      listItem.textContent = nimet[i];
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+ <h1 id="output"></h1><script>
+  'use strict';
+  const name = prompt("What is your name ?")
+ const list = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"];
+  const randomIndex = Math.floor(Math.random() * list.length);
+  const randomHouse = list[randomIndex];
+  const result = `${name}, you belong to ${randomHouse}!`;
+document.getElementById("output").innerText = result
+</script>
+</body>
+</html>

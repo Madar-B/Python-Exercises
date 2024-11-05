@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roll Simulation</title>
+</head>
+<body>
+  <script>
+    function nopanHeitto(lkm, heitot) {
+      let sum = 0;
+
+      for (let i = 0; i < heitot; i++) {
+
+        for (let j = 0; j < lkm; j++) {
+          let heitto = Math.floor(Math.random() * 6) + 1;
+          sum += heitto;
+        }
+      }
+
+      return sum;
+    }
+
+    let numberOfDice = 2;
+    let numberOfRolls = 3;
+
+    let result = nopanHeitto(numberOfDice, numberOfRolls);
+    console.log("Сумма результатов бросков: " + result);
+  </script>
+</body>
+</html>

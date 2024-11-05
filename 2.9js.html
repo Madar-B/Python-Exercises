@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Even Numbers</title>
+</head>
+<body>
+  <script>
+    function even(arr = []) {
+      let list = arr.filter(num => num % 2 === 0);
+      return list;
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+    console.log(even(arr));
+  </script>
+</body>
+</html>

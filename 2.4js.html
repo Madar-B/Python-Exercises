@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Numerot</title>
+</head>
+<body>
+  <script>
+    let numerot = [];
+    let numero = parseInt(prompt("Syötä numero"));
+
+    while (numero !== 0) {
+      numerot.push(numero);
+      numero = parseInt(prompt("Syötä numero"));
+    }
+
+    numerot.sort((a, b) => a - b);
+    console.log(numerot);
+  </script>
+</body>
+</html>

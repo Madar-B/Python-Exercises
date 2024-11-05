@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Osallistujat</title>
+</head>
+<body>
+  <ul id="list"></ul>
+
+  <script>
+    const amount = parseInt(prompt("Anna osallistujien määrä"));
+    const input = prompt("Syötä osallistujien nimet ja erota ne pilkulla");
+    let nimet = input.split(',').map(value => value.trim());
+    nimet.sort();
+
+    const list = document.getElementById("list");
+    for (let i = 0; i < nimet.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = nimet[i];
+        list.appendChild(listItem);
+    }
+  </script>
+</body>
+</html>

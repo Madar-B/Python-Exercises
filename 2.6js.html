@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roll</title>
+</head>
+<body>
+  <script>
+    function heitot() {
+      return Math.floor(Math.random() * 6 + 1);
+    }
+
+    let heitto = 0;
+    while (heitto !== 6) {
+      heitto = heitot();
+    }
+  </script>
+</body>
+</html>

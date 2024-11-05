@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Concat Function</title>
+</head>
+<body>
+  <script>
+    function concat(arr) {
+      let tulos = '';
+      for (let i = 0; i < arr.length; i++) {
+        tulos += arr[i];
+      }
+      return tulos;
+    }
+
+    const nimet = ['Johnny', 'DeeDee', 'Joey', 'Marky'];
+    document.body.innerHTML = concat(nimet);
+  </script>
+</body>
+</html>

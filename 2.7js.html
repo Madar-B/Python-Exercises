@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nopan Heitto</title>
+</head>
+<body>
+  <script>
+    function nopanHeitto(luku) {
+      return Math.floor(Math.random() * luku + 1);
+    }
+
+    let heitto = 0;
+    const luku = parseInt(prompt("Syötä luku"));
+
+    while (heitto !== luku) {
+      heitto = nopanHeitto(luku);
+    }
+  </script>
+</body>
+</html>

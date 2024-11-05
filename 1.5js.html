@@ -1,0 +1,18 @@
+</head>
+<body>
+
+ <h1 id="output"></h1>
+
+ <script>
+  'use strict';
+const year = prompt("enter a year")
+  let result = 0
+  if (year % 4 === 0) {
+    result = "Vuosi on karkaus vuosi";  } else if (year % 4 !== 0) {
+    result = "Vuosi ei ole karkaus vuosi";  } else if (year % 100 === 0 && year % 400 === 0) {
+    result = "Vuosi on karkausvuosi"  } else if ( year % 100 === 0 && year % 400 !== 0) {
+    result = "Vuosi ei ole karkausvuosi"  }
+  document.getElementById("output").innerText = result
+</script>
+</body>
+</html>

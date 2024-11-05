@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Numerot</title>
+</head>
+<body>
+  <script>
+    let numerot = [];
+    let numero = parseInt(prompt("Syötä numero"));
+
+    while (true) {
+      if (numerot.includes(numero)) {
+        break;
+      }
+      numerot.push(numero);
+      numero = parseInt(prompt("Syötä numero"));
+    }
+
+    console.log(numerot);
+  </script>
+</body>
+</html>
